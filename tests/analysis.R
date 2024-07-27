@@ -53,7 +53,7 @@ plot_age <- ggplot(data, aes(x = AgeGroup, y = Effectiveness) +
   geom_boxplot() +
   labs(title = "Vaccine effectiveness as a function of age group.",
        x = "Age Group",
-       y = "Vaccine Effectiveness (%)") +
+       y = "Vaccine Effectiveness") +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
@@ -65,8 +65,8 @@ plot_age <- ggplot(data, aes(x = AgeGroup, y = Effectiveness) +
 plot_strain <- ggplot(data, aes(x = Strain, y = Effectiveness) +
   geom_boxplot() +
   labs(title = "Vaccine effectiveness as a function of influenza strain.",
-       x = "Strain",
-       y = "Vaccine Effectiveness (%)") +
+       x = "Influenza Type",
+       y = "Vaccine Effectiveness)") +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
@@ -79,7 +79,7 @@ plot_strain <- ggplot(data, aes(x = Year, y = Effectiveness) +
   geom_boxplot() +
   labs(title = "Vaccine effectiveness as a function of year/season.",
        x = "Year",
-       y = "Vaccine Effectiveness (%)") +
+       y = "Vaccine Effectiveness") +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
